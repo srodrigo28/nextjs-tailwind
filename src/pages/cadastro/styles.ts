@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     h1{
-        margin-bottom: 4rem;
-    }
+        margin-bottom: 2rem;
+    }   
     color: #fff;
     height: 86vh;
     width: 100vw;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     background-color: blueviolet;
 
     form{
-        height: 40vh;
+        height: 50vh;
         width: 15vw;
         display: flex;
         border-radius: 7px;
@@ -33,10 +33,8 @@ export const Container = styled.div`
             width: 200px;
         }
         .button-group{
-            gap: 25px;
             display: flex;
             align-items: center;
-            justify-content: center;
         }
         button{
             padding: 15px;

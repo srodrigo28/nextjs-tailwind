@@ -1,19 +1,42 @@
+import { useState } from "react";
 import { Container } from "./styles";
+import Link from "next/link";
+import Menu from "../Menu";
 
 export default function Login() {
-    return (
-        <Container>
-            <h1>Page Login</h1>
+    const [email, setEmail] = useState('')
+    const [senha, setSenha] = useState('')
 
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/cadastro">Cadastro</a>
-                </li>
-            </ul>
-        </Container>
+    return (
+        <>
+            <Menu />
+            <Container>
+                
+                <form>
+                <h1>Page Login</h1>
+                    <input
+                        type="password"
+                        value={senha}
+                        onChange={ e => setSenha(e.target.value)}
+                    />
+
+                    <input
+                        type="text"
+                        value={email}
+                        onChange={ e => setEmail(e.target.value)}
+                    />
+                    <div className="button-group">
+                        <Link href="/">
+                            <button>Entrar</button>
+                        </Link>
+                        <Link href="/cadastro">
+                            <button>Cadastrar</button>
+                        </Link>
+                    </div>
+                </form>
+            </Container>
+        </>
+       
     )
 
 }
