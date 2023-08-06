@@ -21,3 +21,6 @@ https://www.youtube.com/watch?v=b2iWK08pCgs&t=1s
 
 npm i styled-components
 npm i @types/styled-components
+
+* https://www.youtube.com/watch?v=vqqCQayb1_4
+* https://www.youtube.com/watch?v=DCnmP9lUfgw&t=4s
